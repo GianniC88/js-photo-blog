@@ -16,24 +16,27 @@ fetch(endpointUrl)
     console.log(data);
 
     //-eseguire un ciclo sui dati per ottenere il singolo oggetto post
-    data.forEach((elementi) => {
+    data.forEach((element) => {
       //-creare il markup con il template literal da utilizzare per la card della colonna dei singoli post
       //valori dall'oggetto destrutturato da inserire
-      const { title, date, url } = elementi;
+      const { title, date, url } = element;
       console.log(title, date, url)
-      const postMarkupStr = `     
+      const postMarkupStr =
+        `     
         <div class="col-4">
           <div class="card">
             <img class="pin" src="./img/pin.svg" alt="" />
-            <img class="padding" src="img/img card.jpeg" class="card-img-top" alt="..." />
+            <img class="padding" src=${url} class="card-img-top" alt="..." />
             <div class="card-body">
-              <p class="card-text">Accusamus Beate ad Facilis Cum Similique Qui Sunt</p>
+              <p class="card-text">${title},${date}</p>
             </div>
           </div>
-         </div>`;
-
+         </div>
+         
+         `;
+      //aggiorno gli elementi della DOM (roeEl)
+      rowEl.insertAdjacentHTML('beforeend', postMarkupStr)
 
     });
 
-    //aggiorno gli elementi della DOM (roeEl)
   });
