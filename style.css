@@ -32,10 +32,16 @@ body {
   padding: 25px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .pin {
   position: absolute;
-  translate: 280%;
-  top: -15px;
+  width: 16px;
+  left: 47%;
+  top: -6px;
 }
 
 .card {
