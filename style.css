@@ -4,13 +4,16 @@
 }
 
 header {
-  background: linear-gradient(45deg, #dddddc, #dadbda);
-  height: 100px;
-  line-height: 100px;
-
+  background-image: url(./img/wall.png);
+}
+h1 {
+  font-family: "Edu TAS Beginner", cursive;
   text-align: center;
   font-style: italic;
-  font-size: 50px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 body {
