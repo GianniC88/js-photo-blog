@@ -16,11 +16,11 @@ fetch(endpointUrl)
     console.log(data);
 
     //-eseguire un ciclo sui dati per ottenere il singolo oggetto post
-    data.forEach((post) => {
+    data.forEach((elementi) => {
       //-creare il markup con il template literal da utilizzare per la card della colonna dei singoli post
       //valori dall'oggetto destrutturato da inserire
-      const { title, date, url } = post;
-      console.log(post)
+      const { title, date, url } = elementi;
+      console.log(title, date, url)
       const postMarkupStr = `     
         <div class="col-4">
           <div class="card">
