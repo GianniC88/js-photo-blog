@@ -18,10 +18,6 @@ h1 {
 
 body {
   background-image: url(img/cork.png);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
 }
 
 .padding {
@@ -46,4 +42,28 @@ body {
 
 .card {
   position: relative;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 426px) {
+  .col-4 {
+    width: 100%;
+  }
+  .pin {
+    width: 30px;
+    top: -10px;
+  }
+  .card {
+    margin-bottom: 25px;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .col-4 {
+    width: calc(100% / 12 * 6);
+  }
+  .pin {
+    width: 20px;
+  }
 }
