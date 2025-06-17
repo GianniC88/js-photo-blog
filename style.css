@@ -24,3 +24,17 @@ header {
 .padding {
   padding: 8px;
 }
+.container {
+  max-width: 1200px;
+  padding: 25px;
+}
+
+.pin {
+  position: absolute;
+  translate: 280%;
+  top: -15px;
+}
+
+.card {
+  position: relative;
+}
