@@ -64,6 +64,10 @@ body {
     width: calc(100% / 12 * 6);
   }
   .pin {
-    width: 20px;
+    width: 33px;
+    top: -10px;
+  }
+  .card {
+    padding: 12px;
   }
 }
