@@ -7,13 +7,16 @@ header {
   background: linear-gradient(45deg, #dddddc, #dadbda);
   height: 100px;
   line-height: 100px;
-  font-weight: normal;
+
   text-align: center;
   font-style: italic;
   font-size: 50px;
 }
 
 .sughero {
-  background-size: cover;
+  background-image: url(img/sughero.jpg);
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
 }
