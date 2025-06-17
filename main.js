@@ -10,7 +10,11 @@ console.log(rowEl);
 const endpointUrl = "https://lanciweb.github.io/demo/api/pictures/";
 
 //eseguire una richiesta ajax all'endpoint per ottenere i dati
-fetch(endpointUrl);
+fetch(endpointUrl)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  });
 
 //-eseguire un ciclo sui dati per ottenere il singolo oggetto post
 
