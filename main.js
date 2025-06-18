@@ -22,7 +22,10 @@ fetch(endpointUrl)
       const { title, date, url } = element;
       console.log(title, date, url)
       const postMarkupStr =
-        `     
+        `<div class = overlay-box>
+            <div class = overlay-cont>
+        </div>
+          </div>
         <div class="col-4">
           <div class="card">
             <img class="pin" src="./img/pin.svg" alt="" />
