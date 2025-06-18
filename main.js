@@ -25,7 +25,9 @@ fetch(endpointUrl)
         `<div class = overlay-box>
             <div class = overlay-cont>
         </div>
+         <button onclick="mostraOverlay"></button>
           </div>
+         
         <div class="col-4">
           <div class="card">
             <img class="pin" src="./img/pin.svg" alt="" />
